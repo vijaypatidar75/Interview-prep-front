@@ -31,13 +31,15 @@ const Login = () => {
         },
         body: JSON.stringify(data), // Convert the data object to a JSON string
       });
-      debugger;
+
       if (!response.ok) {
         const error = await response.json();
         setGetError(error);
         throw new Error("Network response was not ok");
       } else {
-        await response.json(); // Parse the JSON response
+        const result = await response.json(); // Parse the JSON response
+        localStorage.setItem("email", result.email);
+        localStorage.setItem("rating", result.rating);
         navigate("/");
       }
     } catch (error) {

@@ -176,12 +176,13 @@ function Cn() {
           number.
         </p>
         <p>
-          <strong> MAC Address - </strong>MAC Addresses are unique 48-bit
-          hardware numbers of a computer that are embedded into a network card
-          (known as a Network Interface Card) during manufacturing. The MAC
-          Address is also known as the Physical Address of a network device. To
-          make communication between two networked devices, we need two
-          addresses: IP address and MAC address.
+          <strong> MAC Address - </strong>The MAC address designates the
+          physical location of a device within a local network. MAC Addresses
+          are unique 48-bit hardware numbers of a computer that are embedded
+          into a network card (known as a Network Interface Card) during
+          manufacturing. The MAC Address is also known as the Physical Address
+          of a network device. To make communication between two networked
+          devices, we need two addresses: IP address and MAC address.
         </p>
       </div>
       {/* Q.7  */}
@@ -214,9 +215,9 @@ function Cn() {
       <div>
         <h3 style={h3tag}>Q.9 What is an IPv4 & IPv6?</h3>
         <p>
-          An IP address is a 32-bit dynamic address of a node in the network. An
-          IPv4 address has 4 octets of 8-bit each with each number with a value
-          up to 255.
+          An IPv4 address is a 32-bit dynamic address of a node in the network.
+          An IPv4 address has 4 octets of 8-bit each number with a value up to
+          255.
         </p>
         <p>
           IPv6 uses 128-bit address. IPv6 is an alphanumeric address that

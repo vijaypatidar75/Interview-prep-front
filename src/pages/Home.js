@@ -20,7 +20,7 @@ const Home = () => {
           <div>
             <div class="button" id="button-2">
               <div id="slide"></div>
-              <Link to="/dsa">Explore DSA</Link>
+              <Link to="/generate-list-parameter">Explore DSA</Link>
             </div>
           </div>
         </div>

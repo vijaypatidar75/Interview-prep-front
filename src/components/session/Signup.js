@@ -36,7 +36,6 @@ const Signup = () => {
   }, [name, email, password, confirmPassword]);
 
   const handleSignup = async () => {
-    console.log(name, email, password, confirmPassword);
     const data = {
       name,
       email,
@@ -59,6 +58,7 @@ const Signup = () => {
       }
 
       const result = await response.json(); // Parse the JSON response
+      localStorage.setItem("email", result.email);
       navigate("/");
     } catch (error) {
       console.error("There was a problem with the fetch operation:", error);

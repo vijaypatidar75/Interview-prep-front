@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const GetParametersForSheet = () => {
@@ -6,6 +6,13 @@ const GetParametersForSheet = () => {
   const [parameterInput, setParameterInput] = useState([
     0, 0, 0, 0, 0, 0, 0, 0,
   ]);
+
+  useEffect(() => {
+    const getRating = localStorage.getItem("rating");
+    if (getRating !== null && getRating !== "null") {
+      navigate(`/questions-list/${getRating}`);
+    }
+  }, []);
 
   const parameterList = [
     {

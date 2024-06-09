@@ -395,33 +395,6 @@ function Dsa() {
           alt=""
         />
       </div>
-
-      {/* Q.15  */}
-      <div>
-        <h3 style={h3tag}>
-          Q.15 What is a B-tree data structure? What are the applications for
-          B-trees?
-        </h3>
-      </div>
-
-      {/* Q.16  */}
-      <div>
-        <h3 style={h3tag}>
-          Q.16 Define Segment Tree data structure and its applications.
-        </h3>
-      </div>
-
-      {/* Q.17  */}
-      <div>
-        <h3 style={h3tag}>
-          Q.17 Define Trie data structure and its applications.
-        </h3>
-      </div>
-
-      {/* Q.18  */}
-      <div>
-        <h3 style={h3tag}>Q.18 What is a heap data structure?</h3>
-      </div>
     </div>
   );
 }
