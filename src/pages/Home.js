@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <div>
       <Nav />
-      <div class="introduction">
-        <div class="intro-1">
+      <div className="introduction">
+        <div className="intro-1">
           <h2 className="text-[#ce0000] text-2xl font-bold mb-2">Who are We</h2>
           <h1 className="mb-4 text-3xl font-bold leading-9 tracking-tight text-gray-900 md:text-4xl lg:text-5xl">
             Empowering Coders, Enabling Dreams
@@ -18,13 +18,13 @@ const Home = () => {
             and how we're shaping the future of coding education.
           </p>
           <div>
-            <div class="button" id="button-2">
+            <div className="button" id="button-2">
               <div id="slide"></div>
               <Link to="/generate-list-parameter">Explore DSA</Link>
             </div>
           </div>
         </div>
-        <div class="intro-2">
+        <div className="intro-2">
           <img
             width="300px"
             height="300px"
@@ -34,8 +34,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div class="features">
-        <div class="feature-items">
+      <div className="features">
+        <div className="feature-items">
           <div>
             <img
               width="22px"
@@ -85,7 +85,7 @@ const Home = () => {
       <br />
       <br />
 
-      <div class="companies">
+      <div className="companies">
         <h2 className="text-4xl font-bold">Be Consistent To Place At</h2>
         <div>
           <img
@@ -283,14 +283,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div class="offering">
+      <div className="offering">
         <h2 className="text-2xl font-bold">Our offering</h2>
         <h1 className="mb-4 text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl">
           Here is what you get at InterviewPrep
         </h1>
-        <div class="offering-container">
-          <div class="offering-items">
-            <div class="items">
+        <div className="offering-container">
+          <div className="offering-items">
+            <div className="items">
               <img
                 width="28px"
                 height="27px"
@@ -300,7 +300,7 @@ const Home = () => {
               <p>1. Top Interview Questions on CS Core</p>
             </div>
 
-            <div class="items">
+            <div className="items">
               <img
                 width="28px"
                 height="27px"
@@ -310,7 +310,7 @@ const Home = () => {
               <p>2. Generate DSA Sheet based on User's Level </p>
             </div>
 
-            <div class="items">
+            <div className="items">
               <img
                 width="28px"
                 height="27px"
@@ -320,7 +320,7 @@ const Home = () => {
               <p>3. Structured DSA path for Targeted Firm's</p>
             </div>
 
-            <div class="items">
+            <div className="items">
               <img
                 width="28px"
                 height="27px"
@@ -330,7 +330,7 @@ const Home = () => {
               <p>4. Access All Quality Resources </p>
             </div>
 
-            <div class="items">
+            <div className="items">
               <img
                 width="28px"
                 height="27px"
@@ -342,7 +342,7 @@ const Home = () => {
           </div>
 
           <img
-            class="side-img"
+            className="side-img"
             width="340px"
             height="400px"
             src="https://img.freepik.com/free-vector/open-knowledge-concept-template-banner-flyer-with-isometric-style-vector_82472-734.jpg?t=st=1711124934~exp=1711128534~hmac=c93b4fb4316de82c9de80554df10ab3eae82f4122c9f173fda38ef21f35fc34f&w=360"
@@ -351,54 +351,44 @@ const Home = () => {
         </div>
       </div>
 
-      <footer class="footer">
-        <ul class="social-icon">
-          <li class="social-icon__item">
-            <a class="social-icon__link" href="#">
+      <footer className="footer">
+        <ul className="social-icon">
+          <li className="social-icon__item">
+            <div className="social-icon__link">
               <ion-icon name="logo-facebook"></ion-icon>
-            </a>
+            </div>
           </li>
-          <li class="social-icon__item">
-            <a class="social-icon__link" href="#">
+          <li className="social-icon__item">
+            <div className="social-icon__link">
               <ion-icon name="logo-twitter"></ion-icon>
-            </a>
+            </div>
           </li>
-          <li class="social-icon__item">
-            <a class="social-icon__link" href="#">
+          <li className="social-icon__item">
+            <div className="social-icon__link">
               <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
+            </div>
           </li>
-          <li class="social-icon__item">
-            <a class="social-icon__link" href="#">
+          <li className="social-icon__item">
+            <div className="social-icon__link">
               <ion-icon name="logo-instagram"></ion-icon>
-            </a>
+            </div>
           </li>
         </ul>
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              Home
-            </a>
+        <ul className="menu">
+          <li className="menu__item">
+            <div className="menu__link">Home</div>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              About
-            </a>
+          <li className="menu__item">
+            <div className="menu__link">About</div>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              Services
-            </a>
+          <li className="menu__item">
+            <div className="menu__link">Services</div>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              Team
-            </a>
+          <li className="menu__item">
+            <div className="menu__link">Team</div>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              Contact
-            </a>
+          <li className="menu__item">
+            <div className="menu__link">Contact</div>
           </li>
         </ul>
         <p>&copy;2024 Interview Prep | All Rights Reserved</p>

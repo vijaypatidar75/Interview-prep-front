@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Nav.css";
 import { Link, useNavigate } from "react-router-dom";
-import { BiUser } from "react-icons/bi";
 function Nav() {
   const navigate = useNavigate();
   const logout = () => {
@@ -29,7 +28,7 @@ function Nav() {
           Resources
         </Link>
       </div>
-      <div class="right-navbar">
+      <div className="right-navbar">
         {localStorage.getItem("email") !== null ? (
           <div className="flex items-center">
             <button className="a ml-2" onClick={() => logout()}>

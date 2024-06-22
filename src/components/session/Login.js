@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Nav from "../Nav";
 import { Link, useNavigate } from "react-router-dom";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isDisable, setIsDisable] = useState(true);
   const [getError, setGetError] = useState(null);
-
   const navigate = useNavigate();
+  const server_url = "https://interview-prep-backend-43td.onrender.com";
 
   useEffect(() => {
     if (email.length !== 0 && password.length !== 0) {
@@ -22,9 +23,10 @@ const Login = () => {
       email,
       password,
     };
-    const url = "http://localhost:3001/login";
+    const url = `${server_url}/login`;
     try {
       const response = await fetch(url, {
+        mode: "no-cors",
         method: "POST",
         headers: {
           "Content-Type": "application/json", // Set the content type to JSON
@@ -113,12 +115,9 @@ const Login = () => {
               >
                 Log in
               </button>
-              <a
-                href="#"
-                className="flex justify-center no-underline text-blue-400 text-sm"
-              >
+              <div className="flex justify-center no-underline text-blue-400 text-sm">
                 Forgot password?
-              </a>
+              </div>
             </div>
           </div>
         </div>

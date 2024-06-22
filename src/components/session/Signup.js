@@ -10,7 +10,7 @@ const Signup = () => {
   const [isDisable, setIsDisable] = useState(true);
   const [isPasswordMatching, setIsPasswordMatching] = useState(true);
   const [getError, setGetError] = useState(null);
-
+  const server_url = "https://interview-prep-backend-43td.onrender.com";
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const Signup = () => {
       email,
       password,
     };
-    const url = "http://localhost:3001/signup";
+    const url = `${server_url}/signup`;
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -159,17 +159,13 @@ const Signup = () => {
               >
                 Signup
               </button>
-              <a
-                href="#"
+
+              <Link
+                to="/login"
                 className="flex justify-center no-underline text-blue-400 text-sm pt-1"
               >
-                <Link
-                  to="/login"
-                  className="flex justify-center no-underline text-blue-400 text-sm pt-1"
-                >
-                  Already have an account?
-                </Link>
-              </a>
+                Already have an account?
+              </Link>
             </div>
           </div>
         </div>

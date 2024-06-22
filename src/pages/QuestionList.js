@@ -9,8 +9,10 @@ const QuestionList = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isLogin, setIsLogin] = useState(false);
   const [solvedQuestions, setSolvedQuestions] = useState([]);
+  const server_url = "https://interview-prep-backend-43td.onrender.com";
 
   useEffect(() => {
+    const server_url = process.env.SERVER_URL;
     const getProblemList = async () => {
       //check user is logged in or not
       if (localStorage.getItem("email") !== null) {
@@ -21,7 +23,7 @@ const QuestionList = () => {
           email: localStorage.getItem("email"),
           rating: rating,
         };
-        const url = "http://localhost:3001/documents";
+        const url = `${server_url}/documents`;
         const response = await fetch(url, {
           method: "POST",
           headers: {
@@ -51,7 +53,7 @@ const QuestionList = () => {
           email: localStorage.getItem("email"),
           questionId: id,
         };
-        const url = "http://localhost:3001/update-completed-questions";
+        const url = `${server_url}/update-completed-questions`;
         const response = await fetch(url, {
           method: "POST",
           headers: {
@@ -73,7 +75,7 @@ const QuestionList = () => {
           email: localStorage.getItem("email"),
           questionId: id,
         };
-        const url = "http://localhost:3001/remove-completed-questions";
+        const url = `${server_url}/remove-completed-questions`;
         const response = await fetch(url, {
           method: "POST",
           headers: {

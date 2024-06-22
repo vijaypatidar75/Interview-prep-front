@@ -141,11 +141,11 @@ const Resource = () => {
                 className="border border-gray-300 rounded shadow-sm"
               >
                 <div className="border-b border-gray-200 rounded px-3 py-1 bg-gray-100">
-                  <h3 class="subject text-slate-800 font-semibold ">
+                  <h3 className="subject text-slate-800 font-semibold ">
                     {item.label}
                   </h3>
                 </div>
-                <div class="container px-3 flex flex-col space-y-2 py-2">
+                <div className="container px-3 flex flex-col space-y-2 py-2">
                   {item.linkes.map((link, index) => {
                     return (
                       <div
