@@ -121,7 +121,6 @@ const GetParametersForSheet = () => {
       return;
     }
     parameterInput[index] = value;
-    console.log(parameterInput);
   };
 
   const calculateRating = () => {
@@ -132,7 +131,6 @@ const GetParametersForSheet = () => {
 
     // Step 3: Calculate the average
     const average = sum / filteredNumbers.length;
-    console.log(average);
 
     navigate(`/questions-list/${average}`);
   };
