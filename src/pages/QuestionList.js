@@ -12,7 +12,6 @@ const QuestionList = () => {
   const server_url = "https://interview-prep-backend-43td.onrender.com";
 
   useEffect(() => {
-    const server_url = process.env.SERVER_URL;
     const getProblemList = async () => {
       //check user is logged in or not
       if (localStorage.getItem("email") !== null) {
