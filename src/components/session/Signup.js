@@ -45,6 +45,7 @@ const Signup = () => {
     try {
       const response = await fetch(url, {
         method: "POST",
+        mode: "cors",
         headers: {
           "Content-Type": "application/json", // Set the content type to JSON
         },

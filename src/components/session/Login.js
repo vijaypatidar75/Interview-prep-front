@@ -9,6 +9,7 @@ const Login = () => {
   const [getError, setGetError] = useState(null);
   const navigate = useNavigate();
   const server_url = "https://interview-prep-backend-43td.onrender.com";
+  //   const server_url = "http://localhost:3001";
 
   useEffect(() => {
     if (email.length !== 0 && password.length !== 0) {
@@ -26,7 +27,7 @@ const Login = () => {
     const url = `${server_url}/login`;
     try {
       const response = await fetch(url, {
-        mode: "no-cors",
+        mode: "cors",
         method: "POST",
         headers: {
           "Content-Type": "application/json", // Set the content type to JSON
